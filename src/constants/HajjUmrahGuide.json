@@ -1,0 +1,299 @@
+{
+    "Hajj ul Qiran": [
+        {
+            "day": "Day 1: 7th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Recite the Talbiyah in the miqat station to declare intention to make the pilgrimage",
+                    "dua": null
+                },
+                {
+                    "step": "Proceed to Makkah and perform Tawaf al-Qudum (Tawaf of Arrival) around the Kaaba in Masjid al-Haram.",
+                    "dua": null
+                },
+                {
+                    "step": "Perform the Welcome Tawaf, enter Al Haram (Holy Mosque) and circle the Holy Kaaba seven times in a counterclockwise direction.",
+                    "dua": {
+                        "name": "Dua of Tawaf",
+                        "arabic": "بِسْمِ اللهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+                        "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
+                        "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
+                    }
+                }
+            ]
+        },
+        {
+            "day": "Day 2: 8th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Mina 5km away, by walking or by bus, after morning prayer in Makkah.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the day in prayer.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night in tents.",
+                    "dua": null
+                }
+            ],
+            "duas": []
+        },
+        {
+            "day": "Day 3: 9th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Arafat 20km away.",
+                    "dua": null
+                },
+                {
+                    "step": "Stand and pray (wuquf) in Arafat Plain or Jabal Al Rahma (Mount Arafat). Do not leave the boundary or the Hajj will be invalid.",
+                    "dua": {
+                        "name": "Dua of Arafat",
+                        "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+                        "english": "La ilaha illallah, wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu, wa huwa 'ala kulli shai'in qadir",
+                        "translation": "There is no deity worthy of worship except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent."
+                    }
+                },
+                {
+                    "step": "At sunset, travel to Muzdalifah to collect pebbles for the next day.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night under the stars.",
+                    "dua": null
+                }
+            ]
+        }
+    ],
+    "Hajj ul Ifrad": [
+        {
+            "day": "Day 1: 7th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Recite the Talbiyah in the miqat station to declare intention to make the pilgrimage",
+                    "dua": null
+                },
+                {
+                    "step": "Proceed to Makkah and perform Tawaf al-Qudum (Tawaf of Arrival) around the Kaaba in Masjid al-Haram.",
+                    "dua": null
+                },
+                {
+                    "step": "Perform the Welcome Tawaf, enter Al Haram (Holy Mosque) and circle the Holy Kaaba seven times in a counterclockwise direction.",
+                    "dua": {
+                        "name": "Dua of Tawaf",
+                        "arabic": "بِسْمِ اللهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+                        "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
+                        "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
+                    }
+                }
+            ]
+        },
+        {
+            "day": "Day 2: 8th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Mina 5km away, by walking or by bus, after morning prayer in Makkah.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the day in prayer.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night in tents.",
+                    "dua": null
+                }
+            ],
+            "duas": []
+        },
+        {
+            "day": "Day 3: 9th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Arafat 20km away.",
+                    "dua": null
+                },
+                {
+                    "step": "Stand and pray (wuquf) in Arafat Plain or Jabal Al Rahma (Mount Arafat). Do not leave the boundary or the Hajj will be invalid.",
+                    "dua": {
+                        "name": "Dua of Arafat",
+                        "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+                        "english": "La ilaha illallah, wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu, wa huwa 'ala kulli shai'in qadir",
+                        "translation": "There is no deity worthy of worship except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent."
+                    }
+                },
+                {
+                    "step": "At sunset, travel to Muzdalifah to collect pebbles for the next day.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night under the stars.",
+                    "dua": null
+                }
+            ]
+        }
+    ],
+    "Hajj ul Tamattu": [
+        {
+            "day": "Day 1: 7th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Recite the Talbiyah in the miqat station to declare intention to make the pilgrimage",
+                    "dua": null
+                },
+                {
+                    "step": "Proceed to Makkah and perform Tawaf al-Qudum (Tawaf of Arrival) around the Kaaba in Masjid al-Haram.",
+                    "dua": null
+                },
+                {
+                    "step": "Perform the Welcome Tawaf, enter Al Haram (Holy Mosque) and circle the Holy Kaaba seven times in a counterclockwise direction.",
+                    "dua": {
+                        "name": "Dua of Tawaf",
+                        "arabic": "بِسْمِ اللهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+                        "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
+                        "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
+                    }
+                }
+            ]
+        },
+        {
+            "day": "Day 2: 8th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Mina 5km away, by walking or by bus, after morning prayer in Makkah.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the day in prayer.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night in tents.",
+                    "dua": null
+                }
+            ],
+            "duas": []
+        },
+        {
+            "day": "Day 3: 9th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Travel to Arafat 20km away.",
+                    "dua": null
+                },
+                {
+                    "step": "Stand and pray (wuquf) in Arafat Plain or Jabal Al Rahma (Mount Arafat). Do not leave the boundary or the Hajj will be invalid.",
+                    "dua": {
+                        "name": "Dua of Arafat",
+                        "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+                        "english": "La ilaha illallah, wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu, wa huwa 'ala kulli shai'in qadir",
+                        "translation": "There is no deity worthy of worship except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent."
+                    }
+                },
+                {
+                    "step": "At sunset, travel to Muzdalifah to collect pebbles for the next day.",
+                    "dua": null
+                },
+                {
+                    "step": "Spend the night under the stars.",
+                    "dua": null
+                }
+            ]
+        }
+    ],
+    "Umrah Al Mufradah": [
+        {
+            "day": "Day 1: 7th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Recite the Talbiyah in the miqat station to declare intention to make the pilgrimage",
+                    "dua": null
+                },
+                {
+                    "step": "Proceed to Makkah and perform Tawaf al-Qudum (Tawaf of Arrival) around the Kaaba in Masjid al-Haram.",
+                    "dua": null
+                },
+                {
+                    "step": "Perform the Welcome Tawaf, enter Al Haram (Holy Mosque) and circle the Holy Kaaba seven times in a counterclockwise direction.",
+                    "dua": {
+                        "name": "Dua of Tawaf",
+                        "arabic": "بِسْمِ اللهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+                        "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
+                        "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
+                    }
+                }
+            ]
+        }
+    ],
+    "Umrah Al Tammatu": [
+        {
+            "day": "Day 1: 7th of Dhul Hijjah",
+            "steps": [
+                {
+                    "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Recite the Talbiyah in the miqat station to declare intention to make the pilgrimage",
+                    "dua": null
+                },
+                {
+                    "step": "Proceed to Makkah and perform Tawaf al-Qudum (Tawaf of Arrival) around the Kaaba in Masjid al-Haram.",
+                    "dua": null
+                },
+                {
+                    "step": "Perform the Welcome Tawaf, enter Al Haram (Holy Mosque) and circle the Holy Kaaba seven times in a counterclockwise direction.",
+                    "dua": {
+                        "name": "Dua of Tawaf",
+                        "arabic": "بِسْمِ اللهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+                        "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
+                        "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
+                    }
+                }
+            ]
+        }
+    ]
+}

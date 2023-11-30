@@ -1,0 +1,10 @@
+{
+  "name": "HajjProjectHassan",
+  "displayName": "HajjProjectHassan",
+  "expo": {
+    "slug": "HajjProjectHassan",
+    "name": "HajjProjectHassan",
+    "sdkVersion": "49.0.0",
+    "entryPoint": ".vscode\\exponentIndex.js"
+  }
+}
