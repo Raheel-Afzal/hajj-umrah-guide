@@ -14,9 +14,9 @@ import {Hajj, Umrah} from '../Enums';
 import HajjUmrahGuide from '../constants/HajjUmrahGuide.json';
 import {COLORS, IMAGES} from '../constants';
 import {IconButton} from '../components';
+import { HajjUmrah } from '../models/Model';
 
 export const Steps = ({navigation}: any) => {
-  type HajjUmrah = `${Hajj}` | `${Umrah}`;
   //@ts-ignore
   let hajjType: HajjUmrah = useRoute().params.selectedType;
 

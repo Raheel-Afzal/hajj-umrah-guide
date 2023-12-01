@@ -5,7 +5,7 @@ import {COLORS} from '../constants';
 interface StepButtonProps {
   top: any;
   right: any;
-  text: string;
+  text: number;
   onPress: () => void;
 }
 export const MapStepButton: FC<StepButtonProps> = ({
@@ -28,10 +28,11 @@ export const MapStepButton: FC<StepButtonProps> = ({
 const styles = StyleSheet.create({
   stepButton: {
     transform: [{rotate: '90deg'}],
-    backgroundColor: '#cd6345',
+    backgroundColor: '#26313d',
     borderRadius: 100,
     height: 30,
     width: 30,
+    zIndex:1,
     position: 'absolute',
   },
   stepText: {

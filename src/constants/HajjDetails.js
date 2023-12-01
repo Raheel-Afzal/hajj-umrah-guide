@@ -1,6 +1,6 @@
 import {Hajj, Umrah} from '../Enums';
 export const Hajj_Umrah_Details = {
-  [`${Hajj.QIRAN}`]: [
+  [Hajj.QIRAN]: [
     'Ihram',
     "Performing the Welcome Tawaf and Sa'y",
     'Going to Mina from Makkah',
@@ -12,7 +12,7 @@ export const Hajj_Umrah_Details = {
     'Farewell Tawaf in the Holy City of Makkah',
     'Departing for home',
   ],
-  [`${Hajj.IFRAD}`]: [
+  [Hajj.IFRAD]: [
     'Ihram',
     "Performing the Welcome Tawaf and Sa'y,",
     'Going to Mina from Makkah',
@@ -24,20 +24,7 @@ export const Hajj_Umrah_Details = {
     'Farewell Tawaf in the Holy City of Makkah',
     'Departing for home',
   ],
-  [`${Hajj.TAMATTU}`]: [
-    'Ihram',
-    "Performing the Welcome Tawaf and Sa'y,",
-    'Ihram for Hajj al-Tamattu',
-    'Going to Mina from Makkah',
-    'Going to Arafat from Mina',
-    'Going to Muzdalifah from Arafat',
-    'Proceeding to Mina from Muzdalifah',
-    'Tawaf al-Ifadha in the Holy City of Makkah',
-    'Returning to Mina from Makkah',
-    'Farewell Tawaf in the Holy City of Makkah',
-    'Departing for home',
-  ],
-  [`${Umrah.MUDARAF}`]: [
+  [Hajj.TAMATTU]: [
     'Ihram',
     "Performing the Welcome Tawaf and Sa'y,",
     'Ihram for Hajj al-Tamattu',
@@ -50,7 +37,20 @@ export const Hajj_Umrah_Details = {
     'Farewell Tawaf in the Holy City of Makkah',
     'Departing for home',
   ],
-  [`${Umrah.TAMMATU}`]: [
+  [Umrah.MUDARAF]: [
+    'Ihram',
+    "Performing the Welcome Tawaf and Sa'y,",
+    'Ihram for Hajj al-Tamattu',
+    'Going to Mina from Makkah',
+    'Going to Arafat from Mina',
+    'Going to Muzdalifah from Arafat',
+    'Proceeding to Mina from Muzdalifah',
+    'Tawaf al-Ifadha in the Holy City of Makkah',
+    'Returning to Mina from Makkah',
+    'Farewell Tawaf in the Holy City of Makkah',
+    'Departing for home',
+  ],
+  [Umrah.TAMMATU]: [
     'Ihram',
     "Performing the Welcome Tawaf and Sa'y,",
     'Ihram for Hajj al-Tamattu',
