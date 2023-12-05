@@ -1,12 +1,11 @@
+import { useRoute } from '@react-navigation/native';
 import React from 'react';
-import {Image, View, Text, StyleSheet, FlatList} from 'react-native';
-import {useRoute} from '@react-navigation/native';
-import {MapStepButton} from '../components';
-import {COLORS, IMAGES, SCREENS} from '../constants';
-import {Hajj, Umrah} from '../Enums';
-import {getRightValue} from '../utils/getRightPosition';
-import {HajUmrahMap} from '../constants/HajUmrahMap';
-import {HajjUmrah, Position} from '../models/Model';
+import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
+import { MapStepButton } from '../components';
+import { COLORS, IMAGES, SCREENS } from '../constants';
+import { HajUmrahMap } from '../constants/HajUmrahMap';
+import { HajjUmrah, Position } from '../models/Model';
+import { getRightValue } from '../utils/getRightPosition';
 
 export const Map = ({navigation}: any) => {
   //@ts-ignore
