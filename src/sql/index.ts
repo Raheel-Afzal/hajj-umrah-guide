@@ -19,7 +19,7 @@ class SQLiteDb<T extends Record> {
   }
 
   private openCB = () => {
-    console.log('Database opened');
+    console.log('Database opened: db name>>', this.db.dbname);
   };
 
   private errorCB = (err: SQLError) => {
@@ -37,12 +37,11 @@ class SQLiteDb<T extends Record> {
         return `${name} ${type}${constraintsPart}`;
       })
       .join(', ');
-
     this.db.transaction(tx => {
       tx.executeSql(
         `CREATE TABLE IF NOT EXISTS ${tableName} (id INTEGER PRIMARY KEY AUTOINCREMENT, ${columnDefinitions})`,
         [],
-        () => {
+        res => {
           console.log(`Table '${tableName}' created successfully`);
         },
         (_, error: SQLError) => {
@@ -53,11 +52,11 @@ class SQLiteDb<T extends Record> {
   }
 
   createRecord(tableName: string, data: T): Promise<number> {
+    console.log('data: ', data);
     return new Promise((resolve, reject) => {
       const keys = Object.keys(data);
       const values = Object.values(data);
       const placeholders = Array(keys.length).fill('?').join(', ');
-
       this.db.transaction(tx => {
         tx.executeSql(
           `INSERT INTO ${tableName} (${keys.join(
@@ -68,7 +67,7 @@ class SQLiteDb<T extends Record> {
             resolve(results.insertId);
           },
           (_, error: SQLError) => {
-            reject(error);
+            reject(_);
           },
         );
       });
@@ -90,7 +89,7 @@ class SQLiteDb<T extends Record> {
             resolve(rows);
           },
           (_, error: SQLError) => {
-            reject(error);
+            reject(_);
           },
         );
       });
@@ -115,7 +114,7 @@ class SQLiteDb<T extends Record> {
             resolve('Record updated successfully');
           },
           (_, error: SQLError) => {
-            reject(error);
+            reject(_);
           },
         );
       });
@@ -132,7 +131,7 @@ class SQLiteDb<T extends Record> {
             resolve('Record deleted successfully');
           },
           (_, error: SQLError) => {
-            reject(error);
+            reject(_);
           },
         );
       });

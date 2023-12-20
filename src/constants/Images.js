@@ -11,16 +11,20 @@ const IMAGES = {
 
   // map icons
   enter_into_ihram: require('../images/personInIhram.png'),
-  perform_tawaf:require('../images/tawaf.png'),
-  perform_saey:require('../images/twoMountains.png'),
-  day_at_arafat:require('../images/mountainWithTower.png'),
-  night_at_muzdalifah:require('../images/tent.png'),
-  devil_stoning:require('../images/Wall.png'),
-  animal_sacrifice:require('../images/sheep.png'),
-  hair_trim:require('../images/scisor.png'),
-  return_to_kabah:require('../images/Kabah.png'),
-  fare_well_tawaf:require('../images/Bye.png'),
-  mapBg:require('../images/mapBg.png'),
+  perform_tawaf: require('../images/tawaf.png'),
+  perform_saey: require('../images/twoMountains.png'),
+  day_at_arafat: require('../images/mountainWithTower.png'),
+  night_at_muzdalifah: require('../images/tent.png'),
+  devil_stoning: require('../images/Wall.png'),
+  animal_sacrifice: require('../images/sheep.png'),
+  hair_trim: require('../images/scisor.png'),
+  return_to_kabah: require('../images/Kabah.png'),
+  fare_well_tawaf: require('../images/Bye.png'),
+  mapBg: require('../images/mapBg.png'),
+
+  //checkList
+  passport: require('../images/hajj-umrah-passport-and-visa.jpg'),
+  vaccination_proof: require('../images/hajj-umrah-vaccination-proof.jpg'),
 };
 
 export {IMAGES};
