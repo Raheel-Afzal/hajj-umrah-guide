@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigator() {
   return (
       <Tab.Navigator
-      initialRouteName={SCREENS.TYPE_SELECTION}
+         initialRouteName={SCREENS.TYPE_SELECTION}
         screenOptions={{
           headerShown: false,
           tabBarShowLabel: false,

@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName={SCREENS.TAB_NAVIGATOR}>
         <Stack.Screen
           name={SCREENS.TAB_NAVIGATOR}
           component={TabNavigator}
