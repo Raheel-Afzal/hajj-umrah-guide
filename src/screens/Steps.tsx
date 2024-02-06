@@ -1,34 +1,78 @@
 import {useRoute} from '@react-navigation/native';
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   FlatList,
   Image,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
-  Alert,
-  ScrollView,
 } from 'react-native';
-import {Hajj, Umrah} from '../Enums';
-import HajjUmrahGuide from '../constants/HajjUmrahGuide.json';
-import {COLORS, IMAGES} from '../constants';
 import {IconButton} from '../components';
-import { HajjUmrah } from '../models/Model';
+import AddStepModal from '../components/AddStepModal';
+import {COLORS, IMAGES} from '../constants';
+import HajjUmrahGuide from '../constants/HajjUmrahGuide.json';
+import {HajjUmrah, StepDesc, StepDescDB} from '../models/Model';
+import SQLiteDb from '../sql';
+import {transformArray} from '../utils/transformStepArray';
 
 export const Steps = ({navigation}: any) => {
+  const db = new SQLiteDb<StepDescDB>('HajjUmrahDB');
+
   //@ts-ignore
   let hajjType: HajjUmrah = useRoute().params.selectedType;
 
   const [selectedDay, setSelectedDay] = useState(-1);
   const [selectedStep, setSelectedStep] = useState(-1);
-  console.log('selectedStep: ', selectedStep);
-  console.log('selectedDay: ', selectedDay);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loader, setLoader] = useState(false);
+
+  const [steps, setSteps] = useState<StepDesc[]>([]);
+  const [newStep, setNewStep] = useState<StepDescDB>({
+    stepNo: 0,
+    step: '',
+    name: '',
+    arabic: '',
+    english: '',
+    translation: '',
+    type: hajjType,
+    day: selectedDay,
+  });
+
+  const [stepDropDownCount, setStepDropDownCount] = useState(0);
+
+  const toggle = () => setIsModalOpen(!isModalOpen);
+
+  const getDbSteps = async () => {
+    setLoader(true);
+    const allDua = await db.getAllRecords('stepDescTable');
+    const selectedSteps = HajjUmrahGuide[hajjType][selectedDay]?.steps;
+
+    if (selectedSteps?.length) {
+      const getDbSteps = transformArray(allDua);
+      let temp = [...selectedSteps];
+      getDbSteps.forEach(dbStep => {
+        if (dbStep.type == hajjType && dbStep.day == selectedDay) {
+          temp.splice(dbStep.stepNo, 0, dbStep);
+        }
+      });
+      setSteps(temp);
+    }
+    setLoader(false);
+  };
+
+  useEffect(() => {
+    setNewStep(curr => ({...curr, day: selectedDay}));
+  }, [selectedDay]);
+
+  useEffect(() => {
+    getDbSteps();
+  }, [newStep, selectedDay]);
 
   useEffect(
     () =>
       navigation.addListener('beforeRemove', (e: any) => {
-        console.log('e: ', e);
         if (selectedDay === -1 && selectedStep === -1) {
           navigation.dispatch(e.data.action);
         }
@@ -45,6 +89,11 @@ export const Steps = ({navigation}: any) => {
       }),
     [navigation, selectedDay, selectedStep],
   );
+
+  const handleAddBtn = (count: number) => {
+    setStepDropDownCount(count);
+    setIsModalOpen(true);
+  };
 
   return (
     <View style={styles.container}>
@@ -80,61 +129,75 @@ export const Steps = ({navigation}: any) => {
               )}
             />
           ) : selectedStep === -1 ? (
-            <FlatList
-              data={HajjUmrahGuide[hajjType][selectedDay].steps}
-              renderItem={({item, index}) => (
-                <View key={index} style={styles.listItem}>
-                  <Text style={styles.listItemText}>
-                    {index + 1}. {item.step}
-                  </Text>
-                  {item.dua && (
-                    <View style={styles.stepsView}>
-                      <Text style={styles.duaText}>{item.dua.name}</Text>
-                      <IconButton
-                        icon={IMAGES.dua}
-                        bg={COLORS.greenLight}
-                        onPress={() => setSelectedStep(index)}
-                      />
-                    </View>
+            loader ? (
+              <View>
+                <Text style={styles.loadingText}>LOADING....</Text>
+              </View>
+            ) : (
+              <View>
+                <FlatList
+                  data={steps}
+                  renderItem={({item, index}) => (
+                    <React.Fragment>
+                      <View key={index} style={styles.listItem}>
+                        <Text style={styles.listItemText}>
+                          {index + 1}. {item.step}
+                        </Text>
+                        {item.dua && (
+                          <View style={styles.stepsView}>
+                            <Text style={styles.duaText}>{item.dua.name}</Text>
+                            <IconButton
+                              icon={IMAGES.dua}
+                              bg={COLORS.greenLight}
+                              onPress={() => setSelectedStep(index)}
+                            />
+                          </View>
+                        )}
+                      </View>
+                      {index == steps.length - 1 && (
+                        <TouchableOpacity
+                          style={styles.addBtn}
+                          onPress={() => handleAddBtn(index + 2)}>
+                          <Text style={styles.addText}>Add</Text>
+                        </TouchableOpacity>
+                      )}
+                    </React.Fragment>
                   )}
-                </View>
-              )}
-            />
+                />
+              </View>
+            )
           ) : (
             <ScrollView>
               <Text style={styles.duaName}>
-                {
-                  HajjUmrahGuide[hajjType][selectedDay].steps[selectedStep].dua
-                    ?.name
-                }
+                {steps[selectedStep].dua?.name}
               </Text>
               <View style={[styles.listItem, {alignItems: 'flex-end'}]}>
                 <Text style={[styles.duaText, {color: 'red'}]}>
-                  {
-                    HajjUmrahGuide[hajjType][selectedDay].steps[selectedStep]
-                      .dua?.arabic
-                  }
+                  {steps[selectedStep].dua?.arabic}
                 </Text>
               </View>
               <Text style={{marginTop: 15}}>English:</Text>
               <Text style={[styles.duaText, styles.duaText2]}>
-                {
-                  HajjUmrahGuide[hajjType][selectedDay].steps[selectedStep].dua
-                    ?.english
-                }
+                {steps[selectedStep].dua?.english}
               </Text>
               <Text style={{marginTop: 15}}>Translation:</Text>
 
               <Text style={[styles.duaText, styles.duaText2]}>
-                {
-                  HajjUmrahGuide[hajjType][selectedDay].steps[selectedStep].dua
-                    ?.translation
-                }
+                {steps[selectedStep].dua?.translation}
               </Text>
             </ScrollView>
           )}
         </View>
       </View>
+      <AddStepModal
+        type={hajjType}
+        selectedDay={selectedDay}
+        newStep={newStep}
+        setNewStep={setNewStep}
+        stepDropDownCount={stepDropDownCount}
+        isOpen={isModalOpen}
+        toggle={toggle}
+      />
     </View>
   );
 };
@@ -219,6 +282,31 @@ const styles = StyleSheet.create({
     color: COLORS.primary,
     margin: 10,
     fontSize: 14,
+  },
+  addStepWrapper: {
+    flexDirection: 'row',
+    width: '100%',
+  },
+  addBtn: {
+    backgroundColor: COLORS.greenLight,
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    marginTop: 20,
+    borderRadius: 12,
+  },
+  addText: {
+    fontSize: 22,
+    color: 'white',
+    textAlign: 'center',
+  },
+  loadingText: {
+    fontSize: 32,
+    textAlign: 'center',
+    marginTop: 150,
+    borderRadius: 12,
+    padding: 20,
+    color: 'white',
+    backgroundColor: COLORS.greenLight,
   },
 });
 

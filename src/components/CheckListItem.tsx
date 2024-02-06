@@ -8,6 +8,7 @@ interface Props {
   isChecked: boolean;
   toggleCheck: () => void;
 }
+
 export const CheckListItem: FC<Props> = ({item, isChecked, toggleCheck}) => {
   return (
     <View style={styles.CheckListItem}>
@@ -17,17 +18,17 @@ export const CheckListItem: FC<Props> = ({item, isChecked, toggleCheck}) => {
           style={{fontSize: 14, color: 'black', fontWeight: '700', flex: 2}}>
           {item.itemName}
         </Text>
-        <Image
+        {/* <Image
           source={item.image}
           style={{height: 50, width: 50, flex: 1}}
           resizeMode="contain"
-        />
+        /> */}
       </View>
-      {item.desc.map((description, index) => (
+      {/* {item.desc.map((description, index) => (
         <Text key={index} style={{marginTop: 5, fontSize: 10}}>
           ▪️ {description}
         </Text>
-      ))}
+      ))} */}
     </View>
   );
 };
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     width: '100%',
-    borderBottomWidth: 1,
+    // borderBottomWidth: 1,
     borderBottomColor: '#b6b6b6',
     paddingBottom: 10,
   },

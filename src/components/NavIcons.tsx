@@ -1,6 +1,6 @@
 import React from 'react';
-import { Image, View } from 'react-native';
-import { IMAGES } from '../constants';
+import {Image, View} from 'react-native';
+import {IMAGES} from '../constants';
 
 type IconProps = {
   focused: boolean;
@@ -31,26 +31,29 @@ const CustomIcon = ({
   </View>
 );
 
-export const MakkahIcon = ({ focused }: IconProps) => (
-  <View style={{ top: focused ? -20 : -15 }}>
+export const MakkahIcon = ({focused}: IconProps) => (
+  <View style={{top: focused ? -20 : -15}}>
     <Image
       resizeMode="contain"
-      style={{ height: 80, width: 80 }}
+      style={{height: 80, width: 80}}
       source={focused ? IMAGES.makkahSelected : IMAGES.makkahUnSelected}
     />
   </View>
 );
 
-export const CheckListIcon = ({ focused }: IconProps) => (
-  <CustomIcon
-    focused={focused}
-    iconSource={IMAGES.checkList}
-  />
+export const CheckListIcon = ({focused}: IconProps) => (
+  <CustomIcon focused={focused} iconSource={IMAGES.checkList} />
 );
 
-export const MapIcon = ({ focused }: IconProps) => (
-  <CustomIcon
-    focused={focused}
-    iconSource={IMAGES.map}
-  />
+export const MapIcon = ({focused}: IconProps) => (
+  <CustomIcon focused={focused} iconSource={IMAGES.map} />
+);
+export const TawafIcon = ({focused}: IconProps) => (
+  <CustomIcon focused={focused} iconSource={IMAGES.perform_tawaf} />
+);
+export const DuaIcon = ({focused}: IconProps) => (
+  <CustomIcon focused={focused} iconSource={IMAGES.dua} />
+);
+export const RatingIcon = ({focused}: IconProps) => (
+  <CustomIcon focused={focused} iconSource={IMAGES.rating} />
 );

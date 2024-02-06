@@ -8,6 +8,7 @@ const IMAGES = {
   hajjGuide: require('../images/hajj-guide.png'),
   dua: require('../images/dua.png'),
   personInIhram: require('../images/umrah.png'),
+  rating: require('../images/star.png'),
 
   // map icons
   enter_into_ihram: require('../images/personInIhram.png'),
@@ -25,6 +26,18 @@ const IMAGES = {
   //checkList
   passport: require('../images/hajj-umrah-passport-and-visa.jpg'),
   vaccination_proof: require('../images/hajj-umrah-vaccination-proof.jpg'),
+  saudi_riyals: require('../images/hajj-umrah-saudi-riyals.jpg'),
+  money: require('../images/hajj-umrah-money.jpg'),
+  debit_card: require('../images/hajj-umrah-debit-card.jpg'),
+  emergency_contactnumber: require('../images/hajj-umrah-emergency-contactnumber.jpg'),
+  photocopy_passport: require('../images/hajj-umrah-photocopy-passport.jpg'),
+  valid: require('../images/hajj-umrah-valid.jpg'),
+  itinerary: require('../images/hajj-umrah-itinerary.jpg'),
+  pocket_quran: require('../images/hajj-umrah-pocket-quran.jpg'),
+
+
+
 };
 
 export {IMAGES};
+

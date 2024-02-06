@@ -5,6 +5,9 @@ const SCREENS = {
   MAP: 'Map',
   CHECKLIST: 'CheckList',
   MAPDETAIL: 'MapDetail',
+  TAWAF_COUNTER: 'tawafCounter',
+  ADD_DUA: 'AddDua',
+  ADD_RATING: 'AddRating',
 };
 
 export {SCREENS};

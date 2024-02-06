@@ -2,7 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TabNavigator from './src/navigations/TabNavigator';
 import * as React from 'react';
-import {MapDetails, Steps} from './src/screens';
+import {Map, MapDetails, Steps} from './src/screens';
 import {SCREENS} from './src/constants';
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +19,11 @@ function App() {
         <Stack.Screen
           name={SCREENS.STEPS}
           component={Steps}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={SCREENS.MAP}
+          component={Map}
           options={{headerShown: false}}
         />
         <Stack.Screen

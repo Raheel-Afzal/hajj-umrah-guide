@@ -9,7 +9,7 @@ export const useSQLite = () => {
 
   const [checkedValues, setCheckedValues] = useState<Number[]>([]);
 
-  const db = new SQLiteDb<CheckedValue>('checkedList.db');
+  const db = new SQLiteDb<CheckedValue>('HajjUmrahDB');
 
   const createTable = async () => {
     try {

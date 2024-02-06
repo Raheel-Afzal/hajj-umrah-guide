@@ -1,12 +1,28 @@
-import React, {useEffect} from 'react';
-import {FlatList, Image, StyleSheet, Text, View} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {CheckListItem} from '../components/CheckListItem';
-import {IMAGES} from '../constants';
+import {COLORS, IMAGES} from '../constants';
+import {useCheckList} from '../hooks/useCheckList';
 import {useSQLite} from '../hooks/useSql';
-import {checkListData} from '../constants/CheckList';
 
 export const CheckList = () => {
   const {loadTable, toggleCheck, checkedValues} = useSQLite();
+  const {getDbItems, addCheckListItem} = useCheckList();
+
+  const [newCheckListItem, setNewCheckListItem] = useState('');
+
+  const handleAddClick = () => {
+    addCheckListItem({itemName: newCheckListItem});
+    setNewCheckListItem('');
+  };
 
   useEffect(() => {
     loadTable();
@@ -25,14 +41,25 @@ export const CheckList = () => {
       </View>
       <View style={styles.checkListContainer}>
         <Text style={styles.checkListText}>Check List</Text>
+        <View style={{margin: 10, flexDirection: 'row'}}>
+          <TextInput
+            style={{borderWidth: 1, borderRadius: 8, width: '65%'}}
+            value={newCheckListItem}
+            onChangeText={newText => setNewCheckListItem(newText)}
+          />
+          <TouchableOpacity style={styles.addBtn} onPress={handleAddClick}>
+            <Text style={{color: 'white', fontSize: 18}}>Add</Text>
+          </TouchableOpacity>
+        </View>
+
         <FlatList
-          data={checkListData}
-          keyExtractor={item => item.id.toString()}
+          data={getDbItems}
+          keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
             <CheckListItem
               item={item}
-              isChecked={checkedValues.includes(item.id)}
-              toggleCheck={() => toggleCheck(item.id)}
+              isChecked={checkedValues.includes(item.id as number)}
+              toggleCheck={() => toggleCheck(item.id as number)}
             />
           )}
         />
@@ -56,6 +83,16 @@ const styles = StyleSheet.create({
     padding: 30,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  addBtn: {
+    backgroundColor: COLORS.primary,
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 5,
+    marginHorizontal: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 12,
   },
   header: {
     position: 'absolute',

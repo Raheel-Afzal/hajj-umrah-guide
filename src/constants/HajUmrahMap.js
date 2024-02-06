@@ -126,13 +126,10 @@ export const HajUmrahMap = {
       image: IMAGES.perform_saey,
     },
     {
-      step: 'Devil Stoning in Mina',
-      image: IMAGES.devil_stoning,
-    },
-    {
-      step: 'Animal Sacrifice',
-      image: IMAGES.animal_sacrifice,
-    },
+      step: 'Halq or Taqsir',
+      image: IMAGES.hair_trim,
+    }
+   
 
   ],
   [Umrah.TAMMATU]: [
@@ -145,20 +142,13 @@ export const HajUmrahMap = {
       image: IMAGES.perform_tawaf,
     },
     {
-      step: 'Night at Muzdalifah',
-      image: IMAGES.night_at_muzdalifah,
+      step: 'Perform Saey',
+      image: IMAGES.perform_saey,
     },
     {
-      step: 'Devil Stoning in Mina',
-      image: IMAGES.devil_stoning,
-    },
-    {
-      step: 'Animal Sacrifice',
-      image: IMAGES.animal_sacrifice,
-    },
-    {
-      step: 'Farewell Tawaf',
-      image: IMAGES.fare_well_tawaf,
-    },
+      step: 'Halq or Taqsir',
+      image: IMAGES.hair_trim,
+    }
+    
   ],
 };

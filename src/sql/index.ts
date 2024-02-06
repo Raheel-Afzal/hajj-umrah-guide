@@ -57,6 +57,9 @@ class SQLiteDb<T extends Record> {
       const keys = Object.keys(data);
       const values = Object.values(data);
       const placeholders = Array(keys.length).fill('?').join(', ');
+      console.log('query>',`INSERT INTO ${tableName} (${keys.join(
+        ', ',
+      )}) VALUES (${placeholders})`)
       this.db.transaction(tx => {
         tx.executeSql(
           `INSERT INTO ${tableName} (${keys.join(

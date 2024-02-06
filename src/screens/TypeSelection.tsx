@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     top: -170,
     height: 420,
-    width: 320,
+    width: 360,
     backgroundColor: '#fff',
     shadowColor: '#000',
     shadowOffset: {
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
 
   hajjTextWrapper: {
     paddingHorizontal: 20,
-    width: '72%',
+    width: '76%',
   },
   text: {
     marginVertical: 5,
