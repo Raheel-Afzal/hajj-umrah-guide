@@ -232,7 +232,7 @@
     ],
     "Umrah Al Mufradah": [
         {
-            "day": "Day 1: 7th of Dhul Hijjah",
+            "day": "Day 1",
             "steps": [
                 {
                     "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
@@ -261,11 +261,103 @@
                     }
                 }
             ]
+        },
+        {
+            "day": "Day 2",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Visit the holy sites of Hajj: Mina, Muzdalifah and Arafat",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 3",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Visit Jannat Al Mu’alla, Jabal Al Nour and Exhibition of Two Holy Mosques Architecture (free tour in the evening)",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 4",
+            "steps": [
+                {
+                    "step": "Repeat Umrah rituals from Day 1",
+                    "dua": null
+                },
+                {
+                    "step": "Visit Jabal Thawr.",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 5",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": null
+                },
+                {
+                    "step": "Shop for gifts and souvenirs",
+                    "dua": null
+                },
+                {
+                    "step": "Dine at a fine Makkah restaurant",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 6",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": null
+                },
+                {
+                    "step": "Visit Taif or Jeddah",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 7",
+            "steps": [
+                {
+                    "step": "Perform farewell Tawaf",
+                    "dua": null
+                },
+                {
+                    "step": "Pray at the Holy Mosque",
+                    "dua": null
+                }
+            ]
         }
     ],
     "Umrah Al Tammatu": [
         {
-            "day": "Day 1: 7th of Dhul Hijjah",
+            "day": "Day 1",
             "steps": [
                 {
                     "step": "Prepare to enter Ihram, a spiritual state of purity and devotion. This includes washing your body and changing into Ihram clothing, preferably at a miqat station outside the holy city.",
@@ -292,6 +384,98 @@
                         "english": "Bismillahi, wa-s-salatu wa-s-salamu 'ala Rasulillah, Allahumma inni as'aluka min fadlika",
                         "translation": "In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favor."
                     }
+                }
+            ]
+        },
+        {
+            "day": "Day 2",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Visit the holy sites of Hajj: Mina, Muzdalifah and Arafat",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 3",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": {
+                        "name": "Talbiyah",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ حَجًّا",
+                        "english": "Labbaik Allahumma hajjan",
+                        "translation": "Here I am at your service O Allah, (in response to Your call), here I am. Here I am at Your service and You have no partners. Verily all praise, grace and sovereignty belong to You. You have no partners."
+                    }
+                },
+                {
+                    "step": "Visit Jannat Al Mu’alla, Jabal Al Nour and Exhibition of Two Holy Mosques Architecture (free tour in the evening)",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 4",
+            "steps": [
+                {
+                    "step": "Repeat Umrah rituals from Day 1",
+                    "dua": null
+                },
+                {
+                    "step": "Visit Jabal Thawr.",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 5",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": null
+                },
+                {
+                    "step": "Shop for gifts and souvenirs",
+                    "dua": null
+                },
+                {
+                    "step": "Dine at a fine Makkah restaurant",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 6",
+            "steps": [
+                {
+                    "step": "Pray at the Holy Mosque.",
+                    "dua": null
+                },
+                {
+                    "step": "Visit Taif or Jeddah",
+                    "dua": null
+                }
+            ]
+        },
+        {
+            "day": "Day 7",
+            "steps": [
+                {
+                    "step": "Perform farewell Tawaf",
+                    "dua": null
+                },
+                {
+                    "step": "Pray at the Holy Mosque",
+                    "dua": null
                 }
             ]
         }

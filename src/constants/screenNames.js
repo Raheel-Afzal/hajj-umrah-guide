@@ -5,6 +5,7 @@ const SCREENS = {
   MAP: 'Map',
   CHECKLIST: 'CheckList',
   MAPDETAIL: 'MapDetail',
+  TAWAF_COUNTER: 'TawafCounter',
 };
 
 export {SCREENS};
